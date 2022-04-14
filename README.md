@@ -14,13 +14,13 @@ It parse
 Install gRPC and gRPC Tools:
 
 ```
-python -m pip install grpcio
-python -m pip install grpcio-tools
+pip3 install grpcio
+pip3 install grpcio-tools
 ```
 Try to compile the `*.proto` files:
 
 ```
-python -m grpc_tools.protoc -I./protos --python_out=. --grpc_python_out=. ./protos/emqx_schema_registry.proto
+python3 -m grpc_tools.protoc -I./protos --python_out=. --grpc_python_out=. ./protos/emqx_schema_registry.proto
 ```
 
 Run server:
